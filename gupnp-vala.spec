@@ -2,7 +2,7 @@ Name:           gupnp-vala
 Version:        0.6
 Release:        %mkrel 1
 Summary:        GUPnP is a uPnP framework. This adds vala language bindings
-Group:          Development/Libraries
+Group:          Development/Other
 License:        LGPLv2+
 URL:            http://www.gupnp.org/
 Source0:        http://www.gupnp.org/sources/bindings/%{name}-%{version}.tar.gz
