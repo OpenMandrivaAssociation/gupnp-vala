@@ -1,12 +1,12 @@
 %define vala 0.8.0
 Name:           gupnp-vala
-Version:        0.6.5
+Version:        0.6.7
 Release:        %mkrel 1
 Summary:        GUPnP is a uPnP framework. This adds vala language bindings
 Group:          Development/Other
 License:        LGPLv2+
 URL:            http://www.gupnp.org/
-Source0:        http://www.gupnp.org/sources/bindings/%{name}-%{version}.tar.gz
+Source0:        http://www.gupnp.org/sites/all/files/sources/%name-%version.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: vala-devel >= %vala
 BuildRequires: vala-tools >= %vala
