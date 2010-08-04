@@ -1,6 +1,6 @@
 %define vala 0.8.0
 Name:           gupnp-vala
-Version:        0.6.7
+Version:        0.6.9
 Release:        %mkrel 1
 Summary:        GUPnP is a uPnP framework. This adds vala language bindings
 Group:          Development/Other
