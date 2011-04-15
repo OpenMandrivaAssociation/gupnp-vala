@@ -1,6 +1,6 @@
-%define vala 0.9.5
+%define vala 0.11.3
 Name:           gupnp-vala
-Version:        0.6.12
+Version:        0.8.0
 Release:        %mkrel 1
 Summary:        GUPnP is a uPnP framework. This adds vala language bindings
 Group:          Development/Other
@@ -46,14 +46,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %doc AUTHORS
-# Exclude as file is empty
-%exclude %{_datadir}/vala-0.10/vapi/gssdp-1.0.deps
-%{_datadir}/vala-0.10/vapi/gssdp-1.0.vapi
-%{_datadir}/vala-0.10/vapi/gupnp-1.0.deps
-%{_datadir}/vala-0.10/vapi/gupnp-1.0.vapi
-%{_datadir}/vala-0.10/vapi/gupnp-av-1.0.deps
-%{_datadir}/vala-0.10/vapi/gupnp-av-1.0.vapi
-%{_datadir}/vala-0.10/vapi/gupnp-ui-1.0.deps
-%{_datadir}/vala-0.10/vapi/gupnp-ui-1.0.vapi
+%{_datadir}/vala/vapi/*
 %{_libdir}/pkgconfig/gupnp-vala-1.0.pc
 
