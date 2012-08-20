@@ -1,22 +1,21 @@
-%define vala 0.11.3
+Summary:        GUPnP is a uPnP framework. This adds vala language bindings
 Name:           gupnp-vala
 Version:        0.10.4
-Release:        %mkrel 1
-Summary:        GUPnP is a uPnP framework. This adds vala language bindings
+Release:        1
 Group:          Development/Other
 License:        LGPLv2+
 URL:            http://www.gupnp.org/
-Source0:        http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.xz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: vala-devel >= %vala
-BuildRequires: vala-tools >= %vala
-BuildRequires: vala >= %vala
-BuildRequires: gssdp-devel >= 0.11
-BuildRequires: gupnp-devel >= 0.13.3
-BuildRequires: gupnp-av-devel >= 0.5.9
-BuildRequires: gupnp-ui-devel
-BuildRequires: libsoup-devel
-Requires: pkgconfig
+Source0:        http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
+
+BuildRequires: vala-devel
+BuildRequires: vala-tools
+BuildRequires: vala
+BuildRequires: pkgconfig(gssdp-1.0)
+BuildRequires: pkgconfig(gupnp-1.0)
+BuildRequires: pkgconfig(gupnp-av-1.0)
+BuildRequires: pkgconfig(gupnp-ui-1.0)
+BuildRequires: pkgconfig(libsoup-2.4)
+
 Requires: vala >= 0.9.5
 
 %description
@@ -34,17 +33,12 @@ This package adds vala language bindings
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %check
 make check
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root,-)
 %doc AUTHORS
 %{_datadir}/vala/vapi/*
 %{_libdir}/pkgconfig/gupnp-vala-1.0.pc
