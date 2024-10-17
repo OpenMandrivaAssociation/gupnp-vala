@@ -5,7 +5,7 @@ Release:        2
 Summary:        GUPnP is a uPnP framework. This adds vala language bindings
 Group:          Development/Other
 License:        LGPLv2+
-URL:            http://www.gupnp.org/
+URL:            https://www.gupnp.org/
 Source0:        http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.xz
 BuildRequires: vala-devel >= %vala
 BuildRequires: vala-tools >= %vala
