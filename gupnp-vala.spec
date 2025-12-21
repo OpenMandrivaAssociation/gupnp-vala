@@ -7,6 +7,11 @@ Group:          Development/Other
 License:        LGPLv2+
 URL:            https://www.gupnp.org/
 Source0:        http://ftp.gnome.org/pub/GNOME/sources/%name/%{name}-%{version}.tar.xz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: vala-devel >= %vala
 BuildRequires: vala-tools >= %vala
 BuildRequires: vala >= %vala
